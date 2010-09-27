@@ -1,10 +1,11 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>chankinwing.captcha.decoder</groupId>
-  <artifactId>chankinwing-captcha-decoder</artifactId>
-  <version>1.0.0</version>
-  <name>chankinwing-captcha-decoder</name>
-  <url>http://maven.apache.org</url>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>chankinwing.captcha.decoder</groupId>
+	<artifactId>chankinwing-captcha-decoder</artifactId>
+	<version>1.0.0</version>
+	<name>chankinwing-captcha-decoder</name>
+	<url>http://maven.apache.org</url>
 
 	<build>
 		<finalName>chankinwing-captcha-decoder</finalName>
@@ -18,6 +19,14 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<repositories>
+		<repository>
+			<id>guice-maven</id>
+			<name>guice maven</name>
+			<url>http://guice-maven.googlecode.com/svn/trunk</url>
+		</repository>
+	</repositories>
 
 	<dependencies>
 		<dependency>
@@ -40,14 +49,20 @@
 			<artifactId>junit</artifactId>
 			<version>${version.junit}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.google.code.guice</groupId>
+			<artifactId>guice</artifactId>
+			<version>${verison.guice}</version>
+		</dependency>
 	</dependencies>
 
-	<!-- Dependencies Version -->
 	<properties>
+		<!-- Dependencies Version -->
 		<!-- 3rd Parties -->
 		<version.commons-logging>1.1.1</version.commons-logging>
 		<version.commons-lang>2.4</version.commons-lang>
 		<version.log4j>1.2.14</version.log4j>
 		<version.junit>4.4</version.junit>
+		<verison.guice>2.0.1</verison.guice>
 	</properties>
 </project>
