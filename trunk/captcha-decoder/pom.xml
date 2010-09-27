@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>chankinwing.captcha.decoder</groupId>
+  <artifactId>chankinwing-captcha-decoder</artifactId>
+  <version>1.0.0</version>
+  <name>chankinwing-captcha-decoder</name>
+  <url>http://maven.apache.org</url>
+
+	<build>
+		<finalName>chankinwing-captcha-decoder</finalName>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>${version.commons-logging}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>${version.commons-lang}</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${version.log4j}</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${version.junit}</version>
+		</dependency>
+	</dependencies>
+
+	<!-- Dependencies Version -->
+	<properties>
+		<!-- 3rd Parties -->
+		<version.commons-logging>1.1.1</version.commons-logging>
+		<version.commons-lang>2.4</version.commons-lang>
+		<version.log4j>1.2.14</version.log4j>
+		<version.junit>4.4</version.junit>
+	</properties>
+</project>
