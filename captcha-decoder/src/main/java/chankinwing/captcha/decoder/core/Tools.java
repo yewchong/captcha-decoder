@@ -32,17 +32,14 @@ public class Tools {
 	public static int pixelConvert(int pixel) {
 		int result = 0;
 
-		// ?��?R/G/B
 		int r = (pixel >> 16) & 0xff;
 		int g = (pixel >> 8) & 0xff;
 		int b = (pixel) & 0xff;
 
-		// 默认黑色
 		result = 0xff000000;
 
 		int tmp = r * r + g * g + b * b;
 		if (tmp > 3 * 128 * 128) {
-			// ?�色，全F
 			result += 0x00ffffff;
 		}
 
