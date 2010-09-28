@@ -20,6 +20,7 @@
 		</plugins>
 	</build>
 
+	<!--
 	<repositories>
 		<repository>
 			<id>guice-maven</id>
@@ -27,6 +28,7 @@
 			<url>http://guice-maven.googlecode.com/svn/trunk</url>
 		</repository>
 	</repositories>
+	-->
 
 	<dependencies>
 		<dependency>
@@ -63,6 +65,7 @@
 		<version.commons-lang>2.4</version.commons-lang>
 		<version.log4j>1.2.14</version.log4j>
 		<version.junit>4.4</version.junit>
-		<verison.guice>2.0.1</verison.guice>
+		<verison.guice>2.0</verison.guice>
+		<!--<verison.guice>2.0.1</verison.guice>-->
 	</properties>
 </project>
