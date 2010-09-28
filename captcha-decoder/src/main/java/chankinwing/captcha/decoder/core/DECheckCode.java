@@ -29,7 +29,6 @@ public class DECheckCode {
 					continue;
 				}
 
-				// �?��?��?�?��?��??��?�?
 				for (int y = 0; y < checkCode[t].getHeight(); ++y) {
 					for (int x = 0; x < checkCode[t].getWidth(); ++x) {
 						int expRGB = Tools.pixelConvert(checkCode[t].getRGB(x, y));
