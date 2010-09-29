@@ -16,9 +16,9 @@ public class ImageFileWriter implements IWritable<BufferedImage> {
 	private final Log logger = LogFactory.getLog(getClass());
 
 	@Override
-	public void write(BufferedImage srcImage, File target) {
+	public void write(BufferedImage srcImage, String formatName, File target) {
 		try {
-			ImageIO.write(srcImage, "BMP", target);
+			ImageIO.write(srcImage, formatName, target);
 		} catch (IOException e) {
 			logger.error("cannot create image");
 		}

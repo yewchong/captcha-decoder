@@ -15,7 +15,7 @@ public class ImageFileDao {
 		return reader.read(imgFile);
 	}
 
-	public void write(BufferedImage srcImage, File target) {
-		writer.write(srcImage, target);
+	public void write(BufferedImage srcImage, String formatName, File target) {
+		writer.write(srcImage, formatName, target);
 	}
 }
