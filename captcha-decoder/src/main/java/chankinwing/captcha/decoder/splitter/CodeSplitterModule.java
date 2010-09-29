@@ -8,7 +8,6 @@ public class CodeSplitterModule implements Module {
 	@Override
 	public void configure(Binder binder) {
 		binder.bind(CodeSplitter.class);
-
 	}
 
 }

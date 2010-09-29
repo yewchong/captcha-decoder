@@ -2,7 +2,6 @@ package chankinwing.captcha.decoder.dao;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
@@ -19,8 +18,8 @@ public class ImageFileWriter implements IWritable<BufferedImage> {
 	public void write(BufferedImage srcImage, String formatName, File target) {
 		try {
 			ImageIO.write(srcImage, formatName, target);
-		} catch (IOException e) {
-			logger.error("cannot create image");
+		} catch (Exception e) {
+			logger.error(e.getMessage());
 		}
 	}
 }
