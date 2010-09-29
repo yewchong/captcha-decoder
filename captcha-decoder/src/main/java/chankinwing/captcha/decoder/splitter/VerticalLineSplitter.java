@@ -5,12 +5,10 @@ import java.awt.image.BufferedImage;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import chankinwing.captcha.decoder.util.Constant;
-
 import com.google.inject.Singleton;
 
 @Singleton
-public class CodeSplitter {
+public class VerticalLineSplitter implements ISplittable {
 	private final Log logger = LogFactory.getLog(getClass());
 	private final static int COLOR_BLACK = -16777216;
 	private final static int COLOR_WHITE = -1;
@@ -31,8 +29,12 @@ public class CodeSplitter {
 
 		// Unimplemented better approach
 		/*
-		 * Use recursive call to look up the leftest and rightest edge -------------- ------up------
-		 * -left---right- -----down----- --------------
+		 * Use recursive call to look up the leftest and rightest edge each character
+		 * --------------
+		 * ------up------
+		 * -left---right-
+		 * -----down-----
+		 * --------------
 		 */
 
 		for (int x = 0; x < width; x++) {

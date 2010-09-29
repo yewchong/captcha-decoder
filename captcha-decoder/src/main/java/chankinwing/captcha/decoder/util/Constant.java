@@ -9,6 +9,7 @@ public final class Constant {
 	public static final String PATH_FOLDER_ORIGINAL = "img/original/";
 	public static final String PATH_FOLDER_FILTERED = "img/filtered/";
 	public static final String PATH_FOLDER_SPLIT = "img/split/";
+	public static final String PATH_FOLDER_PROCESSED = "img/processed/";
 
 	// color
 	public static final int COLOR_WHITE = 0xFFFFFF;
