@@ -1,7 +1,8 @@
 package chankinwing.captcha.decoder.dao;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 
-public interface IWritable<T> {
-	public void write(T t, String format, File target);
+public interface IWritable {
+	public void write(BufferedImage image, String format, File target);
 }

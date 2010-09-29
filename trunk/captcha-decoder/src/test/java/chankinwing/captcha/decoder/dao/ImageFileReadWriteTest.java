@@ -10,16 +10,17 @@ import com.google.inject.Injector;
 
 public class ImageFileReadWriteTest {
 
-	private static final String OUTPUT_FORMAT = "BMP";
+	private static final String OUTPUT_FORMAT = "jpg";
 
 	public static void main(String[] args) {
 
-		Injector injector = Guice.createInjector(new ImageFileReaderModule(), new ImageFileWriterModule());
-		ImageFileReader reader = injector.getInstance(ImageFileReader.class);
-		ImageFileWriter writer = injector.getInstance(ImageFileWriter.class);
+		Injector injector = Guice.createInjector(new ImageFileReaderModule(),
+				new ImageFileWriterModule());
+		IReadable reader = injector.getInstance(IReadable.class);
+		IWritable writer = injector.getInstance(IWritable.class);
 
-		BufferedImage image = reader.read(new File(Constant.PATH_FOLDER_IMG + "src1.jpg"));
-		writer.write(image, OUTPUT_FORMAT, new File(Constant.PATH_FOLDER_IMG + "out1.bmp"));
+		BufferedImage image = reader.read(new File(Constant.PATH_FOLDER_ORIGINAL + "src0.jpg"));
+		writer.write(image, OUTPUT_FORMAT, new File(Constant.PATH_FOLDER_PROCESSED + "processed1.jpg"));
 
 	}
 }

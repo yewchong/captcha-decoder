@@ -11,7 +11,7 @@ import org.apache.commons.logging.LogFactory;
 import com.google.inject.Singleton;
 
 @Singleton
-public class ImageFileWriter implements IWritable<BufferedImage> {
+public class ImageFileWriter implements IWritable {
 	private final Log logger = LogFactory.getLog(getClass());
 
 	@Override
