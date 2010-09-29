@@ -10,6 +10,9 @@ public final class Constant {
 	public static final String PATH_FOLDER_FILTERED = "img/filtered/";
 	public static final String PATH_FOLDER_SPLIT = "img/split/";
 	public static final String PATH_FOLDER_PROCESSED = "img/processed/";
+	
+	// AspriseOCR Library Path
+	public static final String PATH_ASPRISE_LIBRARY = "D:/Java/workspace/captcha-decoder/dll/AspriseOCR.dll";
 
 	// color
 	public static final int COLOR_WHITE = 0xFFFFFF;
