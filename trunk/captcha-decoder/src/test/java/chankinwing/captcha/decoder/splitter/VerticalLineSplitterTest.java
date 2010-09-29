@@ -35,7 +35,7 @@ public class VerticalLineSplitterTest {
 		ImageFilter filter = injector.getInstance(ImageFilter.class);
 		ISplittable splitter = injector.getInstance(ISplittable.class);
 
-		BufferedImage vImage = reader.read(new File(Constant.PATH_FOLDER_ORIGINAL + "src1.jpg"));
+		BufferedImage vImage = reader.read(new File(Constant.PATH_FOLDER_ORIGINAL + "src4.jpg"));
 		BufferedImage filteredImage = filter.filter(vImage);
 		BufferedImage[] splitImages = splitter.split(filteredImage, VALIDATION_CODE_LENGTH);
 		for (int i = 0; i < VALIDATION_CODE_LENGTH; i++) {

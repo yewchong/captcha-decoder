@@ -27,9 +27,9 @@ public class AspriseOcrRecognizerTest {
 	private static final String OUTPUT_FORMAT = "jpg";
 
 	public static void main(String[] args) {
-		Injector injector = Guice.createInjector(new ImageFileReaderModule(),
-				new ImageFileWriterModule(), new UstSportsFacilityBookingImageFilterModule(),
-				new VerticalLineSplitterModule(), new AspriseOcrRecognizerModule());
+		Injector injector = Guice.createInjector(new ImageFileReaderModule(), new ImageFileWriterModule(),
+				new UstSportsFacilityBookingImageFilterModule(), new VerticalLineSplitterModule(),
+				new AspriseOcrRecognizerModule());
 
 		IReadable reader = injector.getInstance(IReadable.class);
 		IWritable writer = injector.getInstance(IWritable.class);
@@ -37,7 +37,7 @@ public class AspriseOcrRecognizerTest {
 		ISplittable splitter = injector.getInstance(ISplittable.class);
 		IRecognizable recognizer = injector.getInstance(IRecognizable.class);
 
-		BufferedImage vImage = reader.read(new File(Constant.PATH_FOLDER_ORIGINAL + "src8.jpg"));
+		BufferedImage vImage = reader.read(new File(Constant.PATH_FOLDER_ORIGINAL + "src4.jpg"));
 		BufferedImage filteredImage = filter.filter(vImage);
 		BufferedImage[] splitImages = splitter.split(filteredImage, VALIDATION_CODE_LENGTH);
 		String result = "";
@@ -46,6 +46,6 @@ public class AspriseOcrRecognizerTest {
 				result += recognizer.recognize(splitImages[i]);
 			}
 		}
-		System.out.println(result);
+		System.out.println("result: <" + result + ">");
 	}
 }
