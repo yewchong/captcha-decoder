@@ -2,7 +2,6 @@ package chankinwing.captcha.decoder.dao;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
@@ -20,8 +19,8 @@ public class ImageFileReader implements IReadable<BufferedImage> {
 		BufferedImage image = null;
 		try {
 			image = ImageIO.read(imgFile);
-		} catch (IOException e) {
-			logger.error("cannot open image");
+		} catch (Exception e) {
+			logger.error(e.getMessage());
 		}
 		return image;
 	}

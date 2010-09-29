@@ -18,8 +18,8 @@ public class ImageFileReadWriteTest {
 		ImageFileReader reader = injector.getInstance(ImageFileReader.class);
 		ImageFileWriter writer = injector.getInstance(ImageFileWriter.class);
 
-		BufferedImage image = reader.read(new File(Constant.PATH_IMG_FOLDER + "src1.jpg"));
-		writer.write(image, OUTPUT_FORMAT, new File(Constant.PATH_IMG_FOLDER + "out1.bmp"));
+		BufferedImage image = reader.read(new File(Constant.PATH_FOLDER_IMG + "src1.jpg"));
+		writer.write(image, OUTPUT_FORMAT, new File(Constant.PATH_FOLDER_IMG + "out1.bmp"));
 
 	}
 }
