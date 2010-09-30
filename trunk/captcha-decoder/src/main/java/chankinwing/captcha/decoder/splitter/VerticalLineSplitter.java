@@ -59,7 +59,7 @@ public class VerticalLineSplitter implements ISplittable {
 					isStarted = true;
 				} else {
 					endX = x;
-					logger.debug("char(" + startX + ", " + endX + ")");
+					logger.trace("char(" + startX + ", " + endX + ")");
 					if (count < length) {
 						splitImage[count++] = filteredImage.getSubimage(startX, 0, endX - startX,
 								height);
