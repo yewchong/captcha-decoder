@@ -9,7 +9,9 @@ public class UstSportsFacilityBookingImageFilterModule implements Module {
 	public void configure(Binder binder) {
 		binder.bind(ImageFilter.class);
 		binder.bind(Integer.class).annotatedWith(FilterUpperThreshold.class).toInstance(0);
-		binder.bind(Integer.class).annotatedWith(FilterLowerThreshold.class).toInstance(-4500000);
+		//binder.bind(Integer.class).annotatedWith(FilterLowerThreshold.class).toInstance(-4500000);
+		binder.bind(Integer.class).annotatedWith(FilterLowerThreshold.class).toInstance(-5000000);
+		//binder.bind(Integer.class).annotatedWith(FilterLowerThreshold.class).toInstance(-5500000);
 	}
 
 }

@@ -2,8 +2,6 @@ package chankinwing.captcha.decoder.recognizer;
 
 import java.awt.image.BufferedImage;
 
-import chankinwing.captcha.decoder.util.Constant;
-
 import com.asprise.util.ocr.OCR;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
