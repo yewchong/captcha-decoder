@@ -13,7 +13,7 @@ public class TraverseSplitter implements ISplittable {
 	private final Log logger = LogFactory.getLog(getClass());
 
 	private final static int COLOR_BLACK = -16777216;
-	private final static int COLOR_WHITE = -1;
+	// private final static int COLOR_WHITE = -1;
 
 	private BufferedImage processingImage;
 	private boolean[][] isTraverse;
