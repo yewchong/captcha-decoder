@@ -28,16 +28,6 @@ public class VerticalLineSplitter implements ISplittable {
 		boolean isPreviousLineBlank = true;
 		boolean isThisLineBlank = true;
 
-		// Unimplemented better approach
-		/*
-		 * Use recursive call to look up the leftest and rightest edge each character
-		 * --------------
-		 * ------up------
-		 * -left---right-
-		 * -----down-----
-		 * --------------
-		 */
-
 		for (int x = 0; x < width; x++) {
 
 			// To solve two characters places on the same vertical line, set a max width on the word
