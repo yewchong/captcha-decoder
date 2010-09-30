@@ -1,4 +1,7 @@
-package chankinwing.captcha.decoder.dao;
+package chankinwing.captcha.decoder.image.writer;
+
+import chankinwing.captcha.decoder.image.reader.IReadable;
+import chankinwing.captcha.decoder.image.reader.ImageFileReader;
 
 import com.google.inject.Binder;
 import com.google.inject.Module;

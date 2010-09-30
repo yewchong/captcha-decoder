@@ -3,10 +3,10 @@ package chankinwing.captcha.decoder.filter;
 import java.awt.image.BufferedImage;
 import java.io.File;
 
-import chankinwing.captcha.decoder.dao.IReadable;
-import chankinwing.captcha.decoder.dao.IWritable;
-import chankinwing.captcha.decoder.dao.ImageFileReaderModule;
-import chankinwing.captcha.decoder.dao.ImageFileWriterModule;
+import chankinwing.captcha.decoder.image.reader.IReadable;
+import chankinwing.captcha.decoder.image.reader.ImageFileReaderModule;
+import chankinwing.captcha.decoder.image.writer.IWritable;
+import chankinwing.captcha.decoder.image.writer.ImageFileWriterModule;
 import chankinwing.captcha.decoder.util.Constant;
 
 import com.google.inject.Guice;
