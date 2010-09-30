@@ -1,4 +1,4 @@
-package chankinwing.captcha.decoder.dao;
+package chankinwing.captcha.decoder.image.writer;
 
 import java.awt.image.BufferedImage;
 import java.io.File;

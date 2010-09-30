@@ -6,12 +6,12 @@ import java.io.File;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import chankinwing.captcha.decoder.dao.IReadable;
-import chankinwing.captcha.decoder.dao.IWritable;
-import chankinwing.captcha.decoder.dao.ImageFileReaderModule;
-import chankinwing.captcha.decoder.dao.ImageFileWriterModule;
 import chankinwing.captcha.decoder.filter.ImageFilter;
 import chankinwing.captcha.decoder.filter.UstSportsFacilityBookingImageFilterModule;
+import chankinwing.captcha.decoder.image.reader.IReadable;
+import chankinwing.captcha.decoder.image.reader.ImageFileReaderModule;
+import chankinwing.captcha.decoder.image.writer.IWritable;
+import chankinwing.captcha.decoder.image.writer.ImageFileWriterModule;
 import chankinwing.captcha.decoder.splitter.ISplittable;
 import chankinwing.captcha.decoder.splitter.TraverseSplitterModule;
 import chankinwing.captcha.decoder.splitter.VerticalLineSplitterTest;

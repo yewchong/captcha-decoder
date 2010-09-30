@@ -3,6 +3,9 @@ package chankinwing.captcha.decoder.dao;
 import java.awt.image.BufferedImage;
 import java.io.File;
 
+import chankinwing.captcha.decoder.image.reader.ImageFileReader;
+import chankinwing.captcha.decoder.image.writer.ImageFileWriter;
+
 import com.google.inject.Inject;
 
 public class ImageFileDao {
