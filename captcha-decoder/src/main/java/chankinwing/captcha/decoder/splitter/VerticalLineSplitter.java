@@ -11,8 +11,9 @@ import com.google.inject.Singleton;
 public class VerticalLineSplitter implements ISplittable {
 	private final Log logger = LogFactory.getLog(getClass());
 	private final static int COLOR_BLACK = -16777216;
-	private final static int COLOR_WHITE = -1;
-	private final static int MAX_CHAR_WIDTH = 25;
+
+	// private final static int COLOR_WHITE = -1;
+	// private final static int MAX_CHAR_WIDTH = 25;
 
 	public BufferedImage[] split(BufferedImage filteredImage, int length) {
 		logger.info("===ImageSplitter===");
