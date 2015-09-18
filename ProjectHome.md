@@ -1,0 +1,1 @@
+### to read validation code in HKUST Sports Facilities Booking System. ###
